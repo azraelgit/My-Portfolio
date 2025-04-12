@@ -1,0 +1,353 @@
+/*all*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    text-decoration: none; /* gets rid of underline */
+
+}
+
+body {
+    width: 75%;
+    padding: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/*header*/
+
+header {
+    display: flex; 
+    justify-content: space-between; /* makes the href align right whilst my name is on the left */
+    align-items: center;
+}
+
+.logo {
+    font-size: 35px;
+    color: #50309C;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+}
+
+nav a {
+    font-size: 150%;
+    margin-left: 30px; /*navigation slightly smaller size for minimalism*/
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover, 
+nav a:active {
+    color: #50309C;
+    border-bottom: 2px solid #50309C; /* give an underline when hovered */
+}
+
+
+/*body*/
+
+section {
+    padding: 25px;
+}
+
+p, li { 
+    color: #3A3C40;
+    text-align: justify;
+    font-size: 17px;
+}
+
+h1 {
+    color:rgb(51, 51, 51);
+    font-size: 35px;
+}
+
+h2 {
+    color: #3A3C40;
+    font-size: 28px;
+}
+
+h3 {
+    color:  #50309C;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: #3A3C40;
+}
+
+li {
+    list-style-type:square;
+    line-height: 1.5;
+    margin-left: 25px;
+}
+
+#name {
+    color:  #50309C;
+}
+
+.home {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;  
+}
+
+#pkmn {
+    font-style: italic;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+/*index html*/
+
+.interest-image,
+.interest-image2,
+.past-img,
+.future-img {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.interest-image img,
+.interest-image2 img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover; /* keeps aspect ratio for img */
+    transition: transform 0.3s ease;
+    padding: 10px 10px 50px 10px; /* polaroid like img */
+    border: 1px solid #96969670;
+    background-color: rgb(252, 252, 252);
+}
+
+.interest-image img:hover,
+.interest-image2 img:hover,
+.past-content img:hover,
+.past-content2 img:hover,
+.future-content img:hover,
+.comment-img img:hover {
+    transform: scale(1.05);
+}
+
+.interest-content2 {
+    margin: 0 auto;
+    background-color: rgb(51, 51, 51);
+    padding: 25px;
+}
+
+.interest-content2 h3,
+.interest-content2 p {
+    color: white;
+}
+
+.interest-image2 img { /*adjust img again*/
+    height: 300px;
+    width: 40%;
+    object-fit: cover;
+}
+
+footer p {
+    text-align: center;
+    padding: 25px;
+}
+
+/*past html future html*/
+
+.past-content img,
+.past-content2 img,
+.future-content img {
+    width: 35%;
+    height: 25%;
+    object-fit: cover; /* keeps aspect ratio for img */
+    transition: transform 0.3s ease;
+    padding: 10px 10px 50px 10px; /* polaroid like img */
+    border: 1px solid #96969670;
+    background-color: rgb(252, 252, 252);
+    margin: 25px;
+    justify-content: center;
+}
+
+.past-content{
+    margin: auto;
+}
+
+
+/*comments html*/
+
+.structure p  {
+    margin-top: 25px;
+
+}
+
+.internal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.internalstyle {
+    font-weight: bold;
+    
+}
+
+.aesthetic {
+    background-color: #3A3C40;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.aesthetic p,
+.aesthetic h3 {
+    color: white;
+}
+
+.contrast {
+    color: rgb(0, 245, 0);
+}
+
+
+
+.aesthetic-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+
+.aesthetic-img img {
+    width: 30%;
+}
+
+.spacing-content,
+.internal-content ul {
+    padding: 15px;
+}
+
+.spacing-content h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.spacing-content li,
+.internal-content li {
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    color: white;
+    background-color: #50309C;
+}
+
+.comment-img img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover; /* keeps aspect ratio for img */
+    transition: transform 0.3s ease;
+    padding: 10px 10px 50px 10px; /* polaroid like img */
+    border: 1px solid #96969670;
+    background-color: rgb(252, 252, 252);
+    justify-content: center;
+}
+
+.comment-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) { /*work on al lscreens*/
+    .home {
+        flex-direction: column; /* fixes weird side by side when view screen */
+        align-items: center;
+        gap: 20px;
+    }
+    
+    body {
+        width: 85%;
+        padding: 10px;
+    } 
+
+    .home-image img {
+        max-width: 450px;
+    }
+
+    .internal img {
+        width: 90%;
+    }
+
+    .aesthetic-img img {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .structure img {
+        width: 90%;
+    }
+
+    .aesthetic-img img, 
+    .future-img img {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

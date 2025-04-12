@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Comments</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./websystems.css">
+    </head>
+    
+    <body>
+        <header>
+            <a href="index.html" class="logo">My Portfolio</a> 
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="past.html">Past</a>
+                <a href="future.html">Future</a>
+                <a href="comments.html">Comments</a>
+            </nav>
+        </header>
+
+        <section class="structure">
+            <h2>Comments</h2>
+            <hr>
+            <br>
+            <div class="structure-content">
+                <h3>Overall Structure</h3>
+                <p>
+                    My website consists of four HTML documents (index.html, past.html, present.html, comments.html) as content and one CSS file (websystems.css) to define the styling. Each page is consistent with styling and structure and has the header and menu navigation combined, appearing at the top across all webpages. As such, each page is accessible through the menu navigation, allowing the user to explore other parts of the website freely.                     
+                </p>
+            </div>
+        </section>
+
+        <section class="internal">
+            <div class="internal-content">
+                <h3>Internal Structure</h3>
+                <p>
+                Each HTML document contains elements or tags to format parts of the document. 
+                </p>
+                <ul>
+                    <li><span class="internalstyle">.header</span> - Contains logo and navigation menu</li>
+                    <li><span class="internalstyle">.nav</span> - Navigation menu in all pages</li>
+                    <li><span class="internalstyle">.a href</span> - Provide access to other pages of the website</li>
+                    <li><span class="internalstyle">.section</span> - Groups content</li>
+                    <li><span class="internalstyle">.div</span> - Groups content further</li>
+                    <li><span class="internalstyle">.h1 - .h4</span> - Heading heirarchy</li>
+                    <li><span class="internalstyle">.p</span> - Groups text in paragraphs</li>
+                    <li><span class="internalstyle">.img</span> - Show image with alt text for accessibility</li>
+                    <li><span class="internalstyle">.br and .hr</span> - Divide content for spacing</li>
+                    <li><span class="internalstyle">.footer</span> - Page credits</li>
+                </ul>
+                
+                <p>
+                Below is a diagram I've created that visually explains the general composition of tags used within each HTML document. Note that some documents might have more or fewer elements such as .section or .div depending on the page.
+                </p>
+                
+                <br>
+                <img src="./images/diagram1.png" alt="Diagram of website internal structure">
+                <br>
+            </div>
+        </section>
+
+        <section class="aesthetic">
+            <div class="aesthetic-content">
+                <h3>Aesthetics & Accesibility</h3>
+                <!-- explain why you've chosen the aesthetic-->
+                <p>
+                    I went for a minimilastic design, with a background-colour of white as my primary style, for my website to strip away unnecessary clutter and present myself and my content in a approachable manner. As such, i've incorporated a select few font colours for styling, that passes the WebAIM Accesibility Contrast Checker making the text accessible to read, including dark gray (#3A3C40, Contrast ratio <span class="contrast">11.05:1</span>) for my pargraphs and navigation text, and select h1 headings and navigation hovers with purple (#50309C, Contrast ratio <span class="contrast">9.35:1</span>) to contrast with the white-space in my website. 
+                </p>
+                <div class="aesthetic-img">
+                    <img src="./images/accessibility1.png" alt="Screenshot of WebAIM Contrast Checker">
+                    <img src="./images/accessibility2.png" alt="Screenshot of WebAIM Contrast Checker">
+                </div>
+                <p>
+                    I've chosen purple as the unique colour to give life to my minimalistic website, as it's my favourite colour, to ensure certain words within headings pop out more and make it so the reader notices it first. Also, in certain areas of my webpages, I use a dark-gray background within a .div or .section to contrast the white space and give the website more character and definition. To accompany it, instead of using dark-gray text, I use white text (#FFFFFF) to contrast the background, and is seen within this text box. All texts uses a font-size of 17px and a line-height of 1.5 for further accesiblity in mind, making it easier for the viewer to read, and a web safe font (Verdana, sans-serif) and font-size of for readability. Alt text is also used to describe the contents of an .img. This ensures screen readers that are visually impaired can understand the content. It also serves as a fallback whenever an image fails to load. 
+                </p>
+                <div class="aesthetic-img">
+                    <img src="./images/screenshot1.png" alt="Screenshot of CSS off and Alt text appears">
+                </div>
+                <p>
+                    Visually, most images have a 'polaroid' look to them and when hovered it enlarges. I've chosen method of presentation to showcase my pictures in a more dramatic way. Example of a polaroid photo with enlarge effect when hovering:
+                </p>
+                <div class="comment-img">
+                    <img src="./images/past1.jpg" alt="Picture of Charles playing on DS">
+                    <img src="./images/nature1.jpeg" alt="Picture of Charles playing on DS">
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="styling">
+            <div class="styling-content">
+                <h3>Styling</h3>
+                <p>I used various CSS selectors to style visually structure my HTML document and even special effects such as images looking like a polaroid and animations when hovering. Below is a table that shows the purpose of the prominent selectors.</p><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selector Name</th>
+                            <th>Type</th>
+                            <th>Styles What</th>
+                            <th>Where Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>*</td>
+                            <td>Universal</td>
+                            <td>Defines all pages</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>body</td>
+                            <td>Element</td>
+                            <td>Width, padding, margin, and line-height</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.logo</td>
+                            <td>Class</td>
+                            <td>"My portfolio" text as a logo for the website</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>nav a</td>
+                            <td>Class</td>
+                            <td>Font-size, margin and animation effects (hover underline & colour change)</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>h1, h2, h3, h4</td>
+                            <td>Element</td>
+                            <td>Font-size, text colour, and margin</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>Element</td>
+                            <td>Text colour and justification</td>
+                            <td>All pages</td>
+                        </tr>
+                        <tr>
+                            <td>.home</td>
+                            <td>Class</td>
+                            <td>Display (flex) layout</td>
+                            <td>index.html</td>
+                        </tr>
+                        <tr>
+                            <td>.interest-image, <br>.interest-image2 <br>.past-img</td>
+                            <td>Class</td>
+                            <td>Display (flex) layout, centre content, gap and margin</td>
+                            <td>index.html<br>past.html</td>
+                        </tr>
+                        <tr>
+                            <td>.interest-image img<br>.interest-image2 img<br>.past-content img<br>.past-content2 img</td>
+                            <td>Class</td>
+                            <td>Width, height, transition, padding, border, background-color, margin and center content to create polaroid effect</td>
+                            <td>index.html<br>past.html</td>
+                        </tr>
+                        <tr>
+                            <td>table</td>
+                            <td>Element</td>
+                            <td>Width, border</td>
+                            <td>comments.html</td>
+                        </tr>
+                        <tr>
+                            <td>th, td</td>
+                            <td>Element</td>
+                            <td>Border, padding, text alignment and vertical alignment</td>
+                            <td>comments.html</td>
+                        </tr>
+                        <tr>
+                            <td>.contrast</td>
+                            <td>Class</td>
+                            <td>Text colour</td>
+                            <td>comments.html</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <br>
+        </section>
+
+        <section class="spacing">
+                <h3>Spacing and Interactivity</h3>
+                <p>
+                    I use consistent spacing for my .padding and .margin to construct a uniform structure across my website. I also use various sizes of .gap and .margin-top/.margin-bottom to polish certain areas and present a clean style. Some elements such as .nav (in header) and .img (in index.html) use effects to give visual feedback to the user that they are clickable or important.
+                </p>
+                <div class="spacing-content">
+                    <h4>Spacing of Elements</h4>
+                    <ul>
+                        <li>Used 25px for most padding and margins.</li>
+                        <li>Employed various gap, margin-top, and margin-bottom values to maintain a minimalistic structure.</li>
+                    </ul>
+                    <h4>Interactivity with navigation links and images</h4>
+                    <ul> 
+                        <li>All navigation links include a hover effect (<span id="underline">underline</span> and colour shift to <span id="name">purple #50309C</span>).</li>
+                        <li>Certain images (.img within index.html) have a zoom effect (transform: scale(1.05)).</li>
+                    </ul>
+                </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>
+                By Charles Buenaventura - 25991151 | Web Systems 31268 (Autumn 2025) | University Technology Sydney 
+            </p> 
+        </footer> 
+    </body>  
+ </html>
